@@ -1,0 +1,350 @@
+---
+title: ""
+output:
+  html_document:
+    theme: null
+    toc: false
+---
+
+```{=html}
+<style>
+
+html,body{
+    margin:0;
+    padding:0;
+    width:100%;
+    background:#f4f4f4;
+    font-family:Arial,sans-serif;
+}
+
+/* R Markdown の余白を削除 */
+.main-container{
+    max-width:100% !important;
+    width:100% !important;
+    margin:0 !important;
+    padding:0 !important;
+}
+
+/* ヘッダー */
+header{
+    width:100%;
+    background:#003366;
+    color:white;
+    text-align:center;
+    padding:50px 20px;
+    box-sizing:border-box;
+}
+
+header h1{
+    margin:0;
+    font-size:48px;
+}
+
+header p{
+    margin-top:10px;
+    font-size:22px;
+}
+
+/* メニュー */
+nav{
+    background:#00509e;
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    padding:16px 25px;
+    font-weight:bold;
+}
+
+nav a:hover{
+    background:#003366;
+}
+
+/* 本文 */
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:40px auto;
+}
+
+.card{
+    background:white;
+    padding:30px;
+    margin-bottom:30px;
+    border-radius:12px;
+    box-shadow:0 4px 12px rgba(0,0,0,.15);
+}
+
+.card h2{
+    margin-top:0;
+}
+
+nav a.active{
+    background:#f4f4f4;
+    color:#003366;
+    font-weight:bold;
+    border-radius:5px;
+}
+
+/* フッター */
+footer{
+    background:#003366;
+    color:white;
+    text-align:center;
+    padding:15px;
+}
+
+/* スマホ対応 */
+@media(max-width:768px){
+
+header h1{
+    font-size:32px;
+}
+
+header p{
+    font-size:17px;
+}
+
+nav{
+    flex-direction:column;
+}
+
+nav a{
+    text-align:center;
+    border-top:1px solid rgba(255,255,255,.2);
+}
+
+.container{
+    width:95%;
+}
+
+}
+
+</style>
+
+<header>
+
+<h1>鷹取研究室</h1>
+
+<p>Wireless Communications & ISAC Laboratory</p>
+
+</header>
+
+<nav>
+<a href="index.html">Home</a>
+<a href="research.html">研究紹介</a>
+<a href="members.html">メンバー</a>
+<a href="equipment.html" class="active">研究設備</a>
+<a href="publications.html">研究実績</a>
+<a href="contact.html">Contact</a>
+</nav>
+
+
+
+<div class="container">
+
+<div class="card">
+
+<h2>広帯域ソフトウェア無線機</h2>
+
+<img src="images/wide_sdr.jpg" width="350">
+
+<p>
+広い周波数帯域の無線信号を送受信できるソフトウェア無線機です。
+ISACや6G無線通信の研究に利用しています。
+</p>
+
+</div>
+
+<div class="card">
+
+<h2>ソフトウェア無線機</h2>
+
+<img src="images/sdr.jpg" width="350">
+
+<p>
+通信方式をソフトウェアで自由に実装できる無線機です。
+</p>
+
+</div>
+
+<div class="card">
+
+<h2>スペクトラムアナライザ</h2>
+
+<img src="images/spectrum.jpg" width="350">
+
+<p>
+無線信号の周波数特性や信号強度を測定する機器です。
+</p>
+
+</div>
+
+<div class="card">
+
+<h2>デジタルオシロスコープ</h2>
+
+<img src="images/oscilloscope.jpg" width="350">
+
+<p>
+電気信号の時間波形を観測・解析する測定器です。
+</p>
+
+</div>
+
+<div class="card">
+
+<h2>ベクトルシグナルアナライザ</h2>
+
+<img src="images/vsa.jpg" width="350">
+
+<p>
+変調信号やEVMなどの通信品質を評価する測定器です。
+</p>
+
+</div>
+
+<div class="card">
+
+<h2>パケットキャプチャ</h2>
+
+<img src="images/packet.jpg" width="350">
+
+<p>
+通信パケットを取得し、ネットワーク通信を解析します。
+</p>
+
+</div>
+
+<div class="card">
+
+<h2>クロックジェネレータ</h2>
+
+<img src="images/clock.jpg" width="350">
+
+<p>
+高精度なクロック信号を生成し、測定機器の同期に利用します。
+</p>
+
+</div>
+
+<div class="card">
+
+<h2>シグナルジェネレータ</h2>
+
+<img src="images/signal.jpg" width="350">
+
+<p>
+通信・レーダ実験で使用する各種信号を発生させます。
+</p>
+
+</div>
+
+<div class="card">
+
+<h2>広帯域分配器</h2>
+
+<img src="images/splitter.jpg" width="350">
+
+<p>
+高周波信号を複数に分配するための装置です。
+</p>
+
+</div>
+
+<div class="card">
+
+<h2>広帯域方向結合器</h2>
+
+<img src="images/coupler.jpg" width="350">
+
+<p>
+高周波信号の一部を取り出して測定するための装置です。
+</p>
+
+</div>
+
+<div class="card">
+
+<h2>レーダ測定用ターゲット</h2>
+
+<img src="images/target.jpg" width="350">
+
+<p>
+レーダ性能を評価するための反射ターゲットです。
+</p>
+
+</div>
+
+<div class="card">
+
+<h2>IoT無線評価機</h2>
+
+<img src="images/iot.jpg" width="350">
+
+<p>
+IoT機器の通信性能評価や実験に利用します。
+</p>
+
+</div>
+
+<div class="card">
+
+<h2>測定用ロボットカー</h2>
+
+<img src="images/car.jpg" width="350">
+
+<p>
+走行しながら通信・レーダ測定を行う実験車両です。
+</p>
+
+</div>
+
+<div class="card">
+
+<h2>測定用ドローン</h2>
+
+<img src="images/drone.jpg" width="350">
+
+<p>
+空中から無線通信やレーダ測定を行うために利用します。
+</p>
+
+</div>
+
+<div class="card">
+
+<h2>測定用電動三輪バイク</h2>
+
+<img src="images/bike.jpg" width="350">
+
+<p>
+屋外での電波測定や移動実験に使用する実験車両です。
+</p>
+
+</div>
+
+<div class="card">
+
+<h2>3Dプリンタ</h2>
+
+<img src="images/printer.jpg" width="350">
+
+<p>
+アンテナ治具や実験装置を設計・製作するために利用しています。
+</p>
+
+
+</div>
+</div>
+
+<footer>
+
+© 2026 Takatori Laboratory
+
+</footer>
+```

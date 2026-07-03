@@ -1,0 +1,197 @@
+---
+title: ""
+output:
+  html_document:
+    theme: null
+    toc: false
+---
+
+```{=html}
+<style>
+
+html,body{
+    margin:0;
+    padding:0;
+    width:100%;
+    background:#f4f4f4;
+    font-family:Arial,sans-serif;
+}
+
+/* R Markdown の余白を削除 */
+.main-container{
+    max-width:100% !important;
+    width:100% !important;
+    margin:0 !important;
+    padding:0 !important;
+}
+
+/* ヘッダー */
+header{
+    width:100%;
+    background:#003366;
+    color:white;
+    text-align:center;
+    padding:50px 20px;
+    box-sizing:border-box;
+}
+
+header h1{
+    margin:0;
+    font-size:48px;
+}
+
+header p{
+    margin-top:10px;
+    font-size:22px;
+}
+
+/* メニュー */
+nav{
+    background:#00509e;
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    padding:16px 25px;
+    font-weight:bold;
+}
+
+nav a:hover{
+    background:#003366;
+}
+
+/* 本文 */
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:40px auto;
+}
+
+.card{
+    background:white;
+    padding:30px;
+    margin-bottom:30px;
+    border-radius:12px;
+    box-shadow:0 4px 12px rgba(0,0,0,.15);
+}
+
+.card h2{
+    margin-top:0;
+}
+
+nav a.active{
+    background:#f4f4f4;
+    color:#003366;
+    font-weight:bold;
+    border-radius:5px;
+}
+
+/* フッター */
+footer{
+    background:#003366;
+    color:white;
+    text-align:center;
+    padding:15px;
+}
+
+/* スマホ対応 */
+@media(max-width:768px){
+
+header h1{
+    font-size:32px;
+}
+
+header p{
+    font-size:17px;
+}
+
+nav{
+    flex-direction:column;
+}
+
+nav a{
+    text-align:center;
+    border-top:1px solid rgba(255,255,255,.2);
+}
+
+.container{
+    width:95%;
+}
+
+}
+
+</style>
+
+<header>
+
+<h1>鷹取研究室</h1>
+
+<p>Wireless Communications & ISAC Laboratory</p>
+
+</header>
+
+<nav>
+<a href="index.html">Home</a>
+<a href="research.html" class= "active">研究紹介</a>
+<a href="members.html">メンバー</a>
+<a href="equipment.html">研究設備</a>
+<a href="publications.html">研究実績</a>
+<a href="contact.html">Contact</a>
+</nav>
+
+
+<div class="container">
+<h1 class="catchcopy">ワイヤレス（無線）の新たな力</h1>
+<div class="card">
+
+<h2>ワイヤレスで未来を変える力</h2>
+<p>
+ワイヤレスで未来を変える力
+これからの社会では、「人」や「あらゆるモノ」がつながり、協力しながら社会課題を解決し、豊かな社会を創っていくことがとても大切になっていきます。将来のネットワークでは、スマートフォンやパソコンだけでなく、ロボットや車などの多様なIoT（Internet of Things）機器でも通信が利用され、あらゆる分野の課題を解決していくことが期待されています。
+
+こうした未来の社会を支えるためには、「ワイヤレス（無線）」の革新が欠かせません。ワイヤレスは、電波を使ってスマートフォンなどのさまざまな機器をつなぐ技術であり、特に人が感じる「使いやすさ」や「快適さ」に直接影響します。だからこそ、ネットワークの新たな使い方に合わせた進化が必要なのです。
+
+ワイヤレスシステムにおいて利用できる周波数には限りがあるため、周波数は「資源」として扱われます。限られた周波数資源をいかに有効に使うかが、ワイヤレスの活用範囲拡大のカギとなります。この課題を解決するには、多数のワイヤレスシステムが同じ空間で共存できるよう協力し、周波数資源を効率的に活用する手法が求められます。また、今後さらに利用シーンが増えることを考えると、陸上通信、衛星通信、放送、レーダー、無線電力伝送など、多様なワイヤレスシステムがこれまで以上に適切に周波数を賢く棲み分け、共用する方法の確立も必要です。
+
+私たちの研究室では、周囲の環境や利用状況に応じて、周波数を上手に使い分け、共用する新しい仕組みを研究しています。これによって、たくさんのワイヤレスシステムが同時に使われても、快適に通信できるような未来を目指しています。
+</p>
+
+
+</div>
+<div class="card">
+
+<h2>無線でできることはどんどん広がる</h2>
+<p>
+ワイヤレスの利用をさらに広げるためには、「コスト（費用）」の問題も考えなければなりません。利用シーンが増えると、それぞれの場面に合った専用のシステムが必要になり、無線機器が高価になってしまうからです。
+
+この課題を解決するために、多様なワイヤレスシステムを共通の技術で支え、無線機器（無線デバイス）を幅広い用途で使えるようにする研究が進んでいます。この技術が確立されれば、ひとつの無線デバイスがいろいろな使い方に対応できるようになります。6G時代に向けては、通信とセンシングの両方を一つのワイヤレスシステムで実現する「ISAC（Integrated Sensing and Communication）」が主要技術の一つになると予想されています。
+
+私たちの研究室では、6G以降の世界を見据え、ワイヤレスの使い方がまったく異なるレーダーと無線通信の両方を支えていけるような基本技術の研究に取り組んでいます。現在も車載レーダーが衝突防止に活用されていますが、自動運転の普及が進むと、1台の車に多数のレーダーが搭載され、交差点などでのレーダー同士の干渉が課題となります。こうした干渉を回避し、将来はレーダー同士、通信同士、さらに通信とレーダーの間でも干渉を抑制できるような技術の研究を進めています。
+</p>
+
+</div>
+
+<div class="card">
+
+<h2>誰もが自由に使える未来のワイヤレスへ</h2>
+<p>
+私たちはこのような研究を通じて、誰もが簡単にワイヤレスシステムを活用し、新しい使い方を考えて実現できる世界を目指しています。「使えるシステムに合わせて利用する」のではなく、「使いたい方法に合わせてシステムが応えてくれる」ようになれば、複雑なワイヤレスシステムを意識せずにワイヤレスを使いこなしていけるようになると考えているのです。
+
+周波数という限られた資源を有効に使いながら、利用する人の立場に立ったワイヤレスシステムの研究に取り組み、誰もが自由にワイヤレスを使っていける未来につなげていくことが、私たちの目標です。
+</p>
+
+
+</div>
+
+</div>
+
+<footer>
+
+© 2026 Takatori Laboratory
+
+</footer>
+```
